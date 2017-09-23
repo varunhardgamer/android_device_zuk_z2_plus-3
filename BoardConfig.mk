@@ -121,10 +121,15 @@ TARGET_HAS_LEGACY_CAMERA_HAL1 := true
 TARGET_CAMERASERVICE_CLOSES_NATIVE_HANDLES := true
 
 # Charger
-BOARD_GLOBAL_CFLAGS += -DBATTERY_REAL_INFO
-WITH_CM_CHARGER := true
-BOARD_CHARGER_DISABLE_INIT_BLANK := true
-BOARD_CHARGER_ENABLE_SUSPEND := false
+BOARD_CHARGER_ENABLE_SUSPEND := true
+BOARD_CHARGING_CMDLINE_NAME  := "androidboot.mode"
+BOARD_CHARGING_CMDLINE_VALUE := "usb_chg"
+BACKLIGHT_PATH := "/sys/class/leds/lcd-backlight/brightness"
+BLINK_PATH     := "/sys/class/leds/led:rgb_red/blink"
+RED_LED_PATH   := "/sys/class/leds/led:rgb_red/brightness"
+GREEN_LED_PATH := "/sys/class/leds/led:rgb_green/brightness"
+BLUE_LED_PATH  := "/sys/class/leds/led:rgb_blue/brightness"
+>>>>>>> e3fd32d... Fix offline charging.:BoardConfigCommon.mk
 
 BOARD_CHARGING_CMDLINE_NAME := "androidboot.mode"
 BOARD_CHARGING_CMDLINE_VALUE := "chargerlogo"

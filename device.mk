@@ -265,6 +265,19 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     sensors.msm8996
 
+# Subsystem silent restart
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.sys.ssr.restart_level=venus,AR6320,slpi,modem,adsp
+
+# Offline charging
+ADDITIONAL_DEFAULT_PROPERTIES += \
+    ro.enable_boot_charger_mode=1 
+
+# FlipFlap
+PRODUCT_PACKAGES += \
+    FlipFlap
+
+>>>>>>> e3fd32d... Fix offline charging.:msm8996.mk
 # Wifi
 PRODUCT_PACKAGES += \
     ipacm \
