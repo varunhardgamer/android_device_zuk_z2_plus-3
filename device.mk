@@ -112,7 +112,10 @@ PRODUCT_COPY_FILES += \
 
 # Camera
 PRODUCT_PACKAGES += \
-    SnapdragonCamera
+    Snap \
+    SnapdragonCamera\
+    org.codeaurora.camera \
+org.codeaurora.camera.xml
 
 # Charger
 PRODUCT_PACKAGES += \
