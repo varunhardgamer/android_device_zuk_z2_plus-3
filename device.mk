@@ -115,11 +115,14 @@ PRODUCT_PACKAGES += \
     Snap \
     SnapdragonCamera\
     org.codeaurora.camera \
-org.codeaurora.camera.xml
 
 # Charger
 PRODUCT_PACKAGES += \
     charger_res_images
+    org.codeaurora.camera.xml \
+    camera.msm8996 \
+    libmm-qcamera \
+    mm-qcamera-app
 
 # Connectivity Engine support (CNE)
 PRODUCT_PACKAGES += \
@@ -277,7 +280,6 @@ ADDITIONAL_DEFAULT_PROPERTIES += \
 PRODUCT_PACKAGES += \
     FlipFlap
 
->>>>>>> e3fd32d... Fix offline charging.:msm8996.mk
 # Wifi
 PRODUCT_PACKAGES += \
     ipacm \
