@@ -115,10 +115,11 @@ PRODUCT_PACKAGES += \
     Snap \
     SnapdragonCamera\
     org.codeaurora.camera \
-    org.codeaurora.camera.xml \
-    camera.msm8996 \
-    libmm-qcamera \
-    mm-qcamera-app
+org.codeaurora.camera.xml
+
+# Charger
+PRODUCT_PACKAGES += \
+    charger_res_images
 
 # Connectivity Engine support (CNE)
 PRODUCT_PACKAGES += \
