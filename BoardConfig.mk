@@ -129,7 +129,7 @@ BLINK_PATH     := "/sys/class/leds/led:rgb_red/blink"
 RED_LED_PATH   := "/sys/class/leds/led:rgb_red/brightness"
 GREEN_LED_PATH := "/sys/class/leds/led:rgb_green/brightness"
 BLUE_LED_PATH  := "/sys/class/leds/led:rgb_blue/brightness"
->>>>>>> e3fd32d... Fix offline charging.:BoardConfigCommon.mk
+BOARD_GLOBAL_CFLAGS += -DBATTERY_REAL_INFO
 
 BOARD_CHARGING_CMDLINE_NAME := "androidboot.mode"
 BOARD_CHARGING_CMDLINE_VALUE := "chargerlogo"
