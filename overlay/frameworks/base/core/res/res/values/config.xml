@@ -477,7 +477,7 @@
     <bool name="config_proximityCheckOnWakeEnabledByDefault">true</bool> -->
 
     <!-- Whether home button can wake device -->
-<!--    <bool name="config_homeCanWake">true</bool> -->
+    <add-resource type="bool" name="config_homeCanWake">true</add-resource>
 
     <!-- Whether notify fingerprint client of successful cancelled authentication -->
     <bool name="config_notifyClientOnFingerprintCancelSuccess">true</bool>
