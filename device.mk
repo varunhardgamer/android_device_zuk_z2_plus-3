@@ -118,7 +118,7 @@ PRODUCT_PACKAGES += \
 
 # Charger
 PRODUCT_PACKAGES += \
-    charger_res_images
+    charger_res_images \
     org.codeaurora.camera.xml \
     camera.msm8996 \
     libmm-qcamera \
