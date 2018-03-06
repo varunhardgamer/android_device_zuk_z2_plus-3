@@ -58,7 +58,7 @@ TARGET_2ND_ARCH := arm
 TARGET_2ND_ARCH_VARIANT := armv7-a-neon
 TARGET_2ND_CPU_ABI := armeabi-v7a
 TARGET_2ND_CPU_ABI2 := armeabi
-TARGET_2ND_CPU_VARIANT := krait
+TARGET_2ND_CPU_VARIANT := kryo
 
 ENABLE_CPUSETS := true
 ENABLE_SCHED_BOOST := true
@@ -103,7 +103,7 @@ AUDIO_FEATURE_ENABLED_PROXY_DEVICE := true
 AUDIO_FEATURE_ENABLED_SPKR_PROTECTION := true
 BOARD_SUPPORTS_SOUND_TRIGGER := true
 BOARD_USES_ALSA_AUDIO := true
-USE_CUSTOM_AUDIO_POLICY := 0
+USE_CUSTOM_AUDIO_POLICY := 1
 USE_XML_AUDIO_POLICY_CONF := 1
 
 # Bluetooth
@@ -130,9 +130,6 @@ RED_LED_PATH   := "/sys/class/leds/led:rgb_red/brightness"
 GREEN_LED_PATH := "/sys/class/leds/led:rgb_green/brightness"
 BLUE_LED_PATH  := "/sys/class/leds/led:rgb_blue/brightness"
 BOARD_GLOBAL_CFLAGS += -DBATTERY_REAL_INFO
-
-BOARD_CHARGING_CMDLINE_NAME := "androidboot.mode"
-BOARD_CHARGING_CMDLINE_VALUE := "chargerlogo"
 
 # CNE and DPM
 TARGET_LDPRELOAD := libNimsWrap.so
